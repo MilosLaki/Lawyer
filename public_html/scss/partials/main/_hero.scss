@@ -1,0 +1,27 @@
+
+
+.hero {
+    padding: 140px 0;
+    background-size: cover;
+    //po horizontali (right), po vertikali(center)
+    background-position: right  center;
+    background-repeat: no-repeat;
+    @media(min-width: 768px){
+        //50% po horizontali 100% po vertikali
+        //background-size: 50% auto;
+        background-size: contain;
+    }
+    
+    .hero-content {
+        background-color: rgba(#fff, 0.8);
+        padding: 15px;
+        width: 100%;
+        max-width: 475px;
+        h1 {
+            @media(min-width: 992px){
+                font-size: 5rem;
+                line-height: 6.4rem;
+            }
+        }
+    }
+}

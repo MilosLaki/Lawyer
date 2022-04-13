@@ -6,10 +6,12 @@
     //po horizontali (right), po vertikali(center)
     background-position: right  center;
     background-repeat: no-repeat;
+    margin-bottom: 50px;
     @media(min-width: 768px){
         //50% po horizontali 100% po vertikali
         //background-size: 50% auto;
-        background-size: contain;
+        background-size: 50% auto;
+        margin-bottom: 77px;
     }
     
     .hero-content {
@@ -17,6 +19,9 @@
         padding: 15px;
         width: 100%;
         max-width: 475px;
+        @media(min-width:992px){
+             padding: 0;;
+        }
         h1 {
             @media(min-width: 992px){
                 font-size: 5rem;

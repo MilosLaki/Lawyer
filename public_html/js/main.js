@@ -1,8 +1,32 @@
-$(document).ready(function(){
-    
-    
+$(document).ready(function () {
 
-    
+
+
+
+    if ($('.team-slider').length > 0) {
+        $('.team-slider').owlCarousel({
+            autoplay: true,
+            nav: false,
+            loop: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    margin: 0
+                },
+                992: {
+                    items: 2,
+                    margin: 20
+                },
+                1200: {
+                    items: 2,
+                    margin: 73
+                }
+            }
+        });
+    }
+
+
+
 // animation start
     function animation() {
         var windowHight = $(window).height();
@@ -29,7 +53,7 @@ $(document).ready(function(){
 
 
 
-if ($('.contact-form').length > 0) {
+    if ($('.contact-form').length > 0) {
         $(function () {
             $(".contact-form").validate({
                 highlight: function (element) {
@@ -48,24 +72,24 @@ if ($('.contact-form').length > 0) {
                         required: true,
                         email: true
                     },
-                    message:{
+                    message: {
                         required: true,
                         maxlength: 255
-                        
+
                     }
                 },
                 messages: {
-                   name: {
+                    name: {
                         required: 'Name* is required field!!!'
                     },
                     email: {
                         required: 'Email* is required field!!!',
                         email: 'Please insert valid Email address!!!'
                     },
-                    message:{
+                    message: {
                         required: 'Message* is required field!!!',
                         maxlength: 'Max Message length is 255 characters !!!'
-                        
+
                     }
 
                 },
@@ -80,8 +104,8 @@ if ($('.contact-form').length > 0) {
 
 
 
-    
-    
-    
+
+
+
 });
 

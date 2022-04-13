@@ -73,9 +73,8 @@ $(document).ready(function () {
                         email: true
                     },
                     message: {
-                        required: true,
-                        maxlength: 255
-
+                        required: true
+                       
                     }
                 },
                 messages: {
@@ -87,9 +86,7 @@ $(document).ready(function () {
                         email: 'Please insert valid Email address!!!'
                     },
                     message: {
-                        required: 'Message* is required field!!!',
-                        maxlength: 'Max Message length is 255 characters !!!'
-
+                        required: 'Message* is required field!!!'
                     }
 
                 },
